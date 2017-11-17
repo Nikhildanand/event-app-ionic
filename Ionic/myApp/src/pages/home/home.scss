@@ -1,0 +1,67 @@
+.background{
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1.2fr 5fr 5fr 4fr;
+  grid-gap: 1em;
+}
+.box{
+
+  position: relative;  
+  
+}
+.blur{
+  position: absolute;
+  height: 100%;
+  width:100%;
+  background: #5b86e5; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left,#36d1dc,#5b86e5); /*Safari 5.1-6*/
+  background: -o-linear-gradient(right,#36d1dc,#5b86e5); /*Opera 11.1-12*/
+  background: -moz-linear-gradient(right,#36d1dc,#5b86e5); /*Fx 3.6-15*/
+  background: linear-gradient(to right, #36d1dc, #5b86e5); /*Standard*/
+  box-shadow: 2.5px 2.5px 2.5px #5b86e5,
+              2.5px 2.5px 2.5px #ffef02;
+  -webkit-filter: blur(0.5px); /* Chrome, Opera, etc. */
+  filter: url('blur.svg#blur'); /* Older FF and others - http://jordanhollinger.com/media/blur.svg */
+  filter: blur(0.5px); /* Firefox 35+, eventually all */
+}
+.box div{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 1;
+  font-family: cursive;
+  font-size: 1.5rem; 
+  text-shadow: 2px 2px 2px rgb(20, 63, 148),
+              5px 5px 5px rgb(8, 90, 255);
+  text-transform: uppercase;
+  color:rgb(73, 0, 0);
+  font-size: 1rem;
+  text-align: center;
+}
+
+ion-title{
+  text-shadow: 1px 1px 1px #000000,
+              2px 2px 2px rgb(32, 95, 212);
+
+}
+
+@media only screen and (min-width: 360px) {
+  .box div{
+    font-size: 1.5rem;
+  }
+
+}
+@media only screen and (min-width: 720px) {
+  .box div{
+    font-size: 1.8rem;
+  }
+
+}
+@media only screen and (min-width: 1000px) {
+  .box div{
+    font-size: 2rem;
+  }
+
+}

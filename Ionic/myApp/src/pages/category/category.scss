@@ -1,0 +1,137 @@
+page-category {
+    page-home{
+  background: #f73803;
+}
+.first{
+  position:relative;
+  height:100%;
+  width:100%;
+}
+.image{
+  position:absolute;
+  top:0;
+  left:0;
+  height: 100%;
+  width:100%;
+  z-index:-1;
+  opacity: 0.8;
+
+}
+.image img{
+  height: 100%;
+  width:100;
+  box-shadow: 1px 1px 1px #555555,
+              1px 1px 1px #222222;
+}
+.all{
+  display: grid;
+  height:90%;
+  width:99%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 0.5rem;
+  z-index: 100;
+}
+.container{
+  position:relative;
+  width:100%;
+  height: 100%;
+}
+.contain{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background: rgba(160,160,160,0.5); /* For browsers that do not support gradients */
+  background: #5b86e5; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left,#36d1dc,#5b86e5); /*Safari 5.1-6*/
+  background: -o-linear-gradient(right,#36d1dc,#5b86e5); /*Opera 11.1-12*/
+  background: -moz-linear-gradient(right,#36d1dc,#5b86e5); /*Fx 3.6-15*/
+  background: linear-gradient(to right, #36d1dc, #5b86e5); /*Standard*/
+  box-shadow: 2.5px 2.5px 2.5px #5b86e5,
+              2.5px 2.5px 2.5px #36d1dc;
+  -webkit-filter: blur(0.5px); /* Chrome, Opera, etc. */
+  filter: url('blur.svg#blur'); /* Older FF and others - http://jordanhollinger.com/media/blur.svg */
+  filter: blur(0.5px); /* Firefox 35+, eventually all */
+
+}
+.containe{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background: #5b86e5; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(right,#36d1dc,#5b86e5); /*Safari 5.1-6*/
+  background: -o-linear-gradient(left,#36d1dc,#5b86e5); /*Opera 11.1-12*/
+  background: -moz-linear-gradient(left,#36d1dc,#5b86e5); /*Fx 3.6-15*/
+  background: linear-gradient(to left, #36d1dc, #5b86e5); /*Standard*/
+  box-shadow: 2.5px 2.5px 2.5px #5b86e5,
+              2.5px 2.5px 2.5px #36d1dc;
+  -webkit-filter: blur(0.5px); /* Chrome, Opera, etc. */
+  filter: url('blur.svg#blur'); /* Older FF and others - http://jordanhollinger.com/media/blur.svg */
+  filter: blur(0.5px); /* Firefox 35+, eventually all */
+
+}
+
+.containe>ion-checkbox{
+    position: absolute;
+    top: 50%;
+    left: 0.5em;
+    transform: translate(0,-50%);
+}
+.contain>ion-checkbox{
+    position: absolute;
+    top: 50%;
+    right: 0.5em;
+    transform: translate(0,-50%);
+
+}
+.done{
+    float: right;
+}
+.select{
+    float: left;
+}
+.done, .select{
+    width: 45%;
+    height: 10%;
+}
+.iconName{
+  height: 80%;
+  width: 60%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+}
+.iconName ion-icon{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 1.8em;
+  color: #302424;
+}
+.iconName div{
+  text-align: center;
+}
+@media only screen and (min-width: 360px) {
+  .iconName{
+    width: 65%;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .iconName{
+    width: 75%;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .iconName{
+    width: 85%;
+  }
+}
+}

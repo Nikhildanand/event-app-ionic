@@ -1,0 +1,126 @@
+
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Category</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding >
+    <div class="first">    
+      <div class="all">
+        <div class="container" (click)="business()">
+          <div class="contain">
+            <ion-checkbox color="secondary" checked={{businessCheck}}></ion-checkbox>
+            <div class="iconName">
+              <div class="icon"><ion-icon name="briefcase"></ion-icon></div>
+              <div>Business</div>
+            </div>
+          </div>
+        </div>
+        <div class="container" (click)="concerts()">
+          <div class="containe">
+            <ion-checkbox color="secondary" checked={{concertsCheck}}></ion-checkbox>
+            <div class="iconName">
+              <div class="icon">
+                <ion-icon name="microphone"></ion-icon>
+              </div>
+              <div>Concerts</div>
+            </div>
+          </div>
+        </div>
+        <div class="container" (click)="exhibitions()">
+          <div class="contain">
+            <ion-checkbox color="secondary" checked={{exhibitionsCheck}}></ion-checkbox>
+            <div class="iconName">
+              <div class="icon">
+              <ion-icon name="barcode"></ion-icon>
+            </div>
+            <div>Exhibitions</div>
+            </div>
+          </div>
+        </div>
+        <div class="container" (click)="festivals()">
+          <div class="containe">
+            <ion-checkbox color="secondary" checked="{{festivalsCheck}}"></ion-checkbox>
+            <div class="iconName">
+            <div class="icon">
+              <ion-icon name="aperture"></ion-icon>
+            </div>
+            <div>Festivals</div>
+            </div>
+           </div>
+        </div>
+        <div class="container" (click)="meetups()">
+          <div class="contain">
+            <ion-checkbox color="secondary" checked="{{meetupsCheck}}"></ion-checkbox>
+            <div class="iconName">
+              <div class="icon">
+                <ion-icon name="people"></ion-icon>
+              </div>
+              <div>Meet Ups</div>
+            </div>
+           </div>
+         </div>
+        <div class="container" (click)="music()">
+          <div class="containe">
+            <ion-checkbox color="secondary" checked="{{musicCheck}}"></ion-checkbox>
+            <div class="iconName">
+              <div class="icon">
+                <ion-icon name="musical-note"></ion-icon>
+              </div>
+              <div>Music</div>
+            </div>
+          </div>
+         </div>
+        <div class="container" (click)="parties()">
+          <div class="contain">
+            <ion-checkbox color="secondary" checked="{{partiesCheck}}"></ion-checkbox>
+            <div class="iconName">
+              <div class="icon">
+                <ion-icon name="disc"></ion-icon>
+              </div>
+              <div>Parties</div>
+            </div>
+          </div>
+        </div>
+        <div class="container" (click)="performances()">
+          <div class="containe">
+            <ion-checkbox color="secondary" checked="{{performancesCheck}}"></ion-checkbox>
+            <div class="iconName">
+              <div class="icon">
+                <ion-icon name="logo-freebsd-devil"></ion-icon>
+              </div>
+              <div>Performances</div>
+            </div>
+          </div>
+        </div>
+        <div class="container" (click)="sports()">
+          <div class="contain">
+            <ion-checkbox color="secondary" checked="{{sportsCheck}}"></ion-checkbox>
+            <div class="iconName">
+              <div class="icon">
+                <ion-icon name="football"></ion-icon>
+              </div>
+              <div>Sports</div>
+            </div>
+          </div>
+        </div>
+        <div class="container" (click)="workshops()">
+          <div class="containe">
+            <ion-checkbox color="secondary" checked="{{workshopsCheck}}"></ion-checkbox>
+            <div class="iconName">
+              <div class="icon">
+                <ion-icon name="construct"></ion-icon>
+              </div>
+              <div>Workshops</div>
+            </div>
+          </div>
+        </div>
+      </div>
+          <button ion-button color={{secondary}} class="select" (click)="selection()">{{select}}</button>
+          <button ion-button color="secondary" class="done" (click)="pageChange()">Done</button>
+    </div>
+</ion-content>
